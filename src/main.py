@@ -6,10 +6,10 @@ from htmlnode import HTMLNode
 from blocks import markdown_to_html_node, extract_title
 
 
-if len(sys.argv) == 0:
+if len(sys.argv) == 1:
     basepath = "/"
 else:
-    basepath = sys.argv[0]
+    basepath = sys.argv[1]
 
 
 def reset_directory(dir):
